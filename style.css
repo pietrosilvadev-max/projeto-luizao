@@ -1,0 +1,304 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+ 
+.navbar{
+    width: 100%;
+    height: 90px;
+ 
+    background-color: #ffffff;
+ 
+    display: flex;
+    align-items: center;
+ 
+    padding: 0 30px;
+ 
+    position: fixed;
+    top: 0;
+    left: 0;
+ 
+    z-index: 1000;
+}
+ 
+.logo img{
+    height: 70px;
+}
+ 
+nav{
+    margin-left: 50px;
+}
+ 
+.menu{
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+ 
+.menu li a{
+    text-decoration: none;
+    color: #333;
+ 
+    font-size: 14px;
+    font-weight: 600;
+ 
+    transition: .3s;
+}
+ 
+.menu li a:hover{
+    color: #c40000;
+}
+ 
+.banner{
+    width: 100%;
+ 
+    height: calc(100vh - 90px);
+    margin-top: 90px;
+ 
+    /* TROQUE A IMAGEM AQUI */
+    background-image: url("");
+ 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    position: relative;
+}
+ 
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+ 
+    width: 100%;
+    height: 100%;
+ 
+    background: rgba(0,0,0,0.20);
+}
+ 
+.banner-content{
+    position: relative;
+    z-index: 2;
+ 
+    text-align: center;
+ 
+    max-width: 800px;
+ 
+    padding: 20px;
+}
+ 
+.banner-content h1{
+    color: white;
+ 
+    font-size: 42px;
+    font-weight: bold;
+ 
+    line-height: 1.2;
+ 
+    margin-bottom: 40px;
+ 
+    text-transform: uppercase;
+}
+ 
+.btn-banner{
+    display: inline-block;
+ 
+    width: 180px;
+    height: 50px;
+ 
+    line-height: 50px;
+ 
+    text-decoration: none;
+ 
+    border: 2px solid #ffffff;
+ 
+    color: white;
+ 
+    font-size: 16px;
+    font-weight: 600;
+ 
+    transition: .3s;
+}
+ 
+.btn-banner:hover{
+    background-color: white;
+    color: black;
+}
+ 
+@media(max-width: 900px){
+ 
+    .navbar{
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+ 
+    nav{
+        margin-left: 0;
+        margin-top: 15px;
+    }
+ 
+    .menu{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+ 
+    .banner{
+        margin-top: 130px;
+        height: calc(100vh - 130px);
+    }
+ 
+    .banner-conteudo h1{
+        font-size: 32px;
+    }
+ 
+}
+ 
+@media(max-width: 600px){
+ 
+    .logo img{
+        height: 55px;
+    }
+ 
+    .menu{
+        gap: 10px;
+    }
+ 
+    .menu li a{
+        font-size: 12px;
+    }
+ 
+    .banner-content h1{
+        font-size: 24px;
+    }
+ 
+    .btn-banner{
+        width: 150px;
+        height: 45px;
+        line-height: 45px;
+        font-size: 14px;
+    }
+ 
+}
+ 
+ 
+.banner{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.banner-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+ 
+    width: 100%;
+    height: 100%;
+ 
+    object-fit: cover;
+ 
+    z-index: 0;
+}
+ 
+.overlay{
+    position: absolute;
+    inset: 0;
+ 
+    background: rgba(0,0,0,0.25);
+ 
+    z-index: 1;
+}
+ 
+.banner-content{
+    position: relative;
+    z-index: 2;
+}
+.destino-final{
+    padding: 60px 0;
+    background-color: white;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.destino-final h2{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.conteudo{
+    display: flex;
+    gap: 30px;
+}
+
+.conteudo img{
+    width: 400px;
+}
+
+.texto{
+    font-size: 18px;
+    line-height: 1.8;
+}
+.conteudo img{
+    width: 400px;
+    height: auto;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.destino-final{
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.destino-final h2{
+    font-size: 50px;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.conteudo{
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.conteudo img{
+    width: 350px;
+    border-radius: 5px;
+}
+
+.texto{
+    flex: 1;
+    text-align: justify;
+    line-height: 1.8;
+    color: #555;
+}
+
+.texto p{
+    margin-bottom: 15px;
+}
